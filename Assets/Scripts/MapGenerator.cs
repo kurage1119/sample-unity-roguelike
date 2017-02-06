@@ -55,7 +55,7 @@ public class MapGenerator {
 	}
 
 	public void CreateRange(int maxRoom) {
-		// 領域のリストの初期値としてマップ全体を入れる
+		// 区画のリストの初期値としてマップ全体を入れる
 		rangeList.Add(new Range(0, 0, mapSizeX - 1, mapSizeY - 1));
 
 		bool isDevided;
@@ -64,7 +64,7 @@ public class MapGenerator {
 			isDevided = DevideRange(false);
 			isDevided = DevideRange(true) || isDevided;
 
-			// もしくは最大領域数を超えたら終了
+			// もしくは最大区画数を超えたら終了
 			if (rangeList.Count >= maxRoom) {
 				break;
 			}
@@ -75,7 +75,7 @@ public class MapGenerator {
 	public bool DevideRange(bool isVertical) {
 		bool isDevided = false;
 
-		// 領域ごとに切るかどうか判定する
+		// 区画ごとに切るかどうか判定する
 		List<Range> newRangeList = new List<Range>();
 		foreach (Range range in rangeList) {
 			// これ以上分割できない場合はスキップ
@@ -86,18 +86,18 @@ public class MapGenerator {
 			}
 
 			// 40％の確率で分割しない
-			// ただし、領域の数が1つの時は必ず分割する
+			// ただし、区画の数が1つの時は必ず分割する
 			if (rangeList.Count > 1 && RogueUtils.RandomJadge(0.4f)) {
 				continue;
 			}
 
-			// 長さから最少の領域サイズ2つ分を引き、残りからランダムで分割位置を決める
+			// 長さから最少の区画サイズ2つ分を引き、残りからランダムで分割位置を決める
 			int length = isVertical ? range.GetWidthY() : range.GetWidthX();
 			int margin = length - MINIMUM_RANGE_WIDTH * 2;
 			int baseIndex = isVertical ? range.Start.Y : range.Start.X;
 			int devideIndex = baseIndex + MINIMUM_RANGE_WIDTH + RogueUtils.GetRandomInt(1, margin) - 1;
 
-			// 分割された領域の大きさを変更し、新しい領域を追加リストに追加する
+			// 分割された区画の大きさを変更し、新しい区画を追加リストに追加する
 			// 同時に、分割した境界を通路として保存しておく
 			Range newRange = new Range();
 			if (isVertical) {
@@ -110,23 +110,23 @@ public class MapGenerator {
 				range.End.X = devideIndex - 1;
 			}
 
-			// 追加リストに新しい領域を退避する。
+			// 追加リストに新しい区画を退避する。
 			newRangeList.Add(newRange);
 
 			isDevided = true;
 		}
 
-		// 追加リストに退避しておいた新しい領域を追加する。
+		// 追加リストに退避しておいた新しい区画を追加する。
 		rangeList.AddRange(newRangeList);
 
 		return isDevided;
 	}
 
 	private void CreateRoom() {
-		// 部屋のない領域が偏らないようにリストをシャッフルする
+		// 部屋のない区画が偏らないようにリストをシャッフルする
 		rangeList.Sort((a, b) => RogueUtils.GetRandomInt(0, 1) - 1);
 
-		// 1領域あたり1部屋を作っていく。作らない領域もあり。
+		// 1区画あたり1部屋を作っていく。作らない区画もあり。
 		foreach (Range range in rangeList) {
 			// 30％の確率で部屋を作らない
 			// ただし、最大部屋数の半分に満たない場合は作る
@@ -181,9 +181,10 @@ public class MapGenerator {
 
 		bool isFirst = true;
 		foreach (int direction in directionList) {
-			// 70%の確率で通路を作らない
+			// 80%の確率で通路を作らない
 			// ただし、まだ通路がない場合は必ず作る
-			if (!isFirst && RogueUtils.RandomJadge(0.7f)) {
+			if (!isFirst && RogueUtils.RandomJadge(0.8f)) {
+				System.Threading.Thread.Sleep(1);
 				continue;
 			} else {
 				isFirst = false;
