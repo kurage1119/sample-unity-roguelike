@@ -85,6 +85,8 @@ public class MapGenerator {
 				continue;
 			}
 
+			System.Threading.Thread.Sleep(1);
+
 			// 40％の確率で分割しない
 			// ただし、区画の数が1つの時は必ず分割する
 			if (rangeList.Count > 1 && RogueUtils.RandomJadge(0.4f)) {
@@ -128,6 +130,7 @@ public class MapGenerator {
 
 		// 1区画あたり1部屋を作っていく。作らない区画もあり。
 		foreach (Range range in rangeList) {
+      System.Threading.Thread.Sleep(1);
 			// 30％の確率で部屋を作らない
 			// ただし、最大部屋数の半分に満たない場合は作る
 			if (roomList.Count > maxRoom / 2 && RogueUtils.RandomJadge(0.3f)) {
@@ -181,10 +184,10 @@ public class MapGenerator {
 
 		bool isFirst = true;
 		foreach (int direction in directionList) {
+			System.Threading.Thread.Sleep(1);
 			// 80%の確率で通路を作らない
 			// ただし、まだ通路がない場合は必ず作る
 			if (!isFirst && RogueUtils.RandomJadge(0.8f)) {
-				System.Threading.Thread.Sleep(1);
 				continue;
 			} else {
 				isFirst = false;
