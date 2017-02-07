@@ -6,3 +6,4 @@ Unityで作るローグライクなサンプルゲームのプロジェクトで
 
 関連記事
 * [Unity でローグライクゲームを作ってみよう（企画編）](https://www.kurage.click/game-dev/103)
+* [Unity でローグライクゲームを作ってみよう（マップ自動生成編）](https://www.kurage.click/game-dev/187)
