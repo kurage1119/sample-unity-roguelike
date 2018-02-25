@@ -1,0 +1,316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Po",
+				"Position(int x, int y)\tPosition(int x, int y)"
+			],
+			[
+				"Quaternion",
+				"Quaternion()\tQuaternion()"
+			],
+			[
+				"Vector3",
+				"Vector3(float x, float y)\tVector3(float x, float y)"
+			],
+			[
+				"sr",
+				"script\tTag"
+			],
+			[
+				"get",
+				"GetKey(string name)\tbool"
+			],
+			[
+				"GetCom",
+				"GetComponent<T>()\tT"
+			],
+			[
+				"Ani",
+				"Animator\tAnimator"
+			],
+			[
+				"GetA",
+				"GetAxis(string axisName)\tfloat"
+			],
+			[
+				"di",
+				"destination\tVector3 { get; set; }"
+			],
+			[
+				"ro",
+				"rotation\tQuaternion { get; set; }"
+			],
+			[
+				"Vetro",
+				"Vector3\tVector3"
+			],
+			[
+				"Vec",
+				"Vector3\tVector3"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assets/Scripts/SceneInitializer.cs",
+			"settings":
+			{
+				"buffer_size": 1813,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 335.0,
+		"last_filter": "enable",
+		"selected_items":
+		[
+			[
+				"enable",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"preview",
+				"OmniMarkupPreviewer: Preview Current Markup in Browser"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 548.0
+	},
+	"console":
+	{
+		"height": 143.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/workspace/Unity/sample-unity-roguelike"
+	],
+	"file_history":
+	[
+		"/D/workspace/Unity/sample-unity-roguelike/Assets/Scripts/Utils/RogueUtils.cs",
+		"/D/workspace/JellyFish/jellyfish.sublime-workspace",
+		"/D/workspace/JellyFish/jellyfish.sublime-project",
+		"/D/workspace/JellyFish/jellyfish/api/play-java-seed/.gitignore",
+		"/D/workspace/Unity/sample-unity-roguelike/Assets/Scripts/SceneInitializer.cs",
+		"/C/Users/Keisuke/.ssh/id_rsa.pub",
+		"/D/workspace/JellyFish/jellyfish/README.md",
+		"/D/workspace/JellyFish/jellyfish/document/database/user.md",
+		"/D/workspace/JellyFish/jellyfish/document/database/00.template.md",
+		"/D/workspace/JellyFish/jellyfish/document/database/テーブル定義一覧.md",
+		"/D/workspace/Unity/3DRPG/Assets/Scripts/UnityChanController.cs",
+		"/D/workspace/Unity/3DRPG/Assets/Scripts/TargetCoin.cs",
+		"/D/workspace/Unity/3DRPG/3DRPG.sublime-project",
+		"/D/workspace/Unity/3DRPG/Assets/Editor/CreateEmpty.cs",
+		"/D/workspace/Unity/3DRPG/Assets/Scripts/UnityChan.cs",
+		"/D/workspace/wordpress/backup/20170122/20170122_backup_588473ef079f36679170122085719_archive/database.sql",
+		"/D/workspace/android/uninstall.bat",
+		"/D/Game/Nexon/Asgard/Script/_JP_nChocoFemale.dat",
+		"/D/Game/AsEmu/midgard-0.2.3/Locale_13.114.92.129.dat",
+		"/D/Game/Nexon/Asgard/Locale.dat",
+		"/D/Library/Downloads/mp3tag_249am_jp2/Amazon.co.jp.src",
+		"/D/Library/Downloads/mp3tag_249am_jp2/Cover Art#Amazon.co.jp.src"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"player",
+			"jelly.sublime-project",
+			"jelly.sub"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assets/Scripts/SceneInitializer.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								694,
+								694
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"1561,1565": "Assignment is redundant"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 114.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 114.0
+	},
+	"pinned_build_system": "",
+	"project": "sample-unity-roguelike.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"template",
+				"document\\database\\00.template.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -28,3 +28,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# UnityChan Assets
+/Assets/UnityChan*
+/Assets/README_SD_UnityChan.txt*
