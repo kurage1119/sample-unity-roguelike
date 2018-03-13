@@ -45,24 +45,20 @@ public class SceneInitializer : MonoBehaviour {
 		for (int y = 0; y < MAP_SIZE_Y; y++) {
 			for (int x = 0; x < MAP_SIZE_X; x++) {
 				if (map[x, y] == 1) {
-					// Instantiate(floorPrefab, new Vector3(x, 0, y), new Quaternion());
-					floorList.Add(new Vector3(x, 0, y));
+					Instantiate(floorPrefab, new Vector3(x, 0, y), new Quaternion());
 				} else {
-					// Instantiate(wallPrefab, new Vector3(x, 0, y), new Quaternion());
-					wallList.Add(new Vector3(x, 0, y));
+					Instantiate(wallPrefab, new Vector3(x, 0, y), new Quaternion());
 				}
 			}
 		}
 
-		foreach (var vector in floorList) {
-			Instantiate(floorPrefab, vector, new Quaternion());
-		}
-		foreach (var vector in wallList) {
-			Instantiate(wallPrefab, vector, new Quaternion());
-		}
 	}
 
 	private void SponePlayer() {
+		if (!_player) {
+			return;
+		}
+
 		Position position;
 		do {
 			var x = RogueUtils.GetRandomInt(0, 	MAP_SIZE_X - 1);
